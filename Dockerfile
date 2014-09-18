@@ -1,6 +1,6 @@
 FROM salamandra/etcd
 
-ADD https://github.com/kelseyhightower/confd/releases/download/v0.3.0/confd_0.3.0_linux_amd64.tar.gz /tmp/
+ADD https://github.com/kelseyhightower/confd/releases/download/v0.6.0-alpha3/confd-0.6.0-alpha3-linux-amd64 /tmp/
 
 RUN tar zxvf /tmp/confd_0.3.0_linux_amd64.tar.gz --directory=/tmp
 RUN mv /tmp/confd /usr/local/bin/
